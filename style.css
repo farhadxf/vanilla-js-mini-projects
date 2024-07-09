@@ -1,0 +1,72 @@
+body {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 400px;
+  background: linear-gradient(315deg, rgb(0, 0, 0) 70%, rgb(85, 145, 0));
+  border-bottom: 1px solid rgba(255, 166, 0, 0.368);
+}
+.wrapper:hover {
+  background: linear-gradient(315deg, rgb(0, 0, 0) 80%, rgb(85, 145, 0) 20%);
+}
+
+.name {
+  display: flex;
+  padding: 15px 40px;
+
+  width: 300px;
+}
+.wrapper a {
+  background-color: transparent;
+  border: none;
+  min-width: 80px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.wrapper a:hover {
+  text-decoration: none;
+  color: white;
+  color: orange;
+}
+
+.projects-container .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+}
+.projects-container h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .projects-container h1 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .wrapper:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stunning Feedback UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="feedback-container">
+      <h1>How was your experience?</h1>
+      <div class="rating">
+        <i class="fas fa-star" data-rating="1"></i>
+        <i class="fas fa-star" data-rating="2"></i>
+        <i class="fas fa-star" data-rating="3"></i>
+        <i class="fas fa-star" data-rating="4"></i>
+        <i class="fas fa-star" data-rating="5"></i>
+      </div>
+      <textarea
+        id="feedback-text"
+        placeholder="Tell us more about your experience..."
+      ></textarea>
+      <button id="submit-btn">Submit Feedback</button>
+    </div>
+    <div id="thank-you" class="hidden">
+      <h2>Thank You!</h2>
+      <p>Your feedback has been submitted successfully.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
